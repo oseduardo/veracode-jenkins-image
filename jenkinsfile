@@ -1,0 +1,82 @@
+boolean flagBuildSuccess = false
+
+@Library("veracodeGlobalSharedLibrary") _
+pipeline {
+
+    agent any
+
+    /*environment {
+        vID     = credentials('VID')
+        vKEY     = credentials('VKEY')
+        SRCCLR_API_TOKEN = credentials('SRCCLR_API_TOKEN')
+        product_name = 'Portal Pagos' // Custom Field - This value comes up from repo
+        product_id = 'ppag' // Custom Field - This value comes up from repo
+        appProfileName = '' // This variable is instantiated in stage 'Setting Up Veracode Base Components'
+        wkspSiteId = '' // This variable is instantiated in stage 'Setting Up Veracode Base Components'
+    }
+
+    triggers {
+        GenericTrigger(
+            genericHeaderVariables: [
+                [key: 'X-GitHub-Event', regexpFilter: '']
+            ],
+            genericVariables: [
+                [key: 'ref', value: '$.ref'],
+                [key: 'action', value: '$.action', defaultValue: 'null'],
+                [key: 'repo_name', value: '$.repository.name', defaultValue: 'null'],
+                [key: 'repo_full_name', value: '$.repository.full_name', defaultValue: 'null'],
+                [key: 'origin_branch_name', value: '$.pull_request.head.ref', defaultValue: 'null'],
+                [key: 'target_branch_name', value: '$.pull_request.base.ref', defaultValue: 'null']
+            ],
+            
+            causeString: 'Triggered on $ref',
+
+            token: 'mytoken123',
+            tokenCredentialId: '',
+            
+            printContributedVariables: true,
+            printPostContent: true,
+        )
+    }*/
+
+    stages {
+        // This Stage runs scans related to CD phase during SDLC
+        // Containers Scan
+        stage('Veracode Container Scan'){
+            stages{
+                // This stage builds the container image to be scanned during CD pipeline
+                stage('Build Container Image'){
+                    steps {
+                        script {
+                            try {
+                                echo "[INFO] Starting image build process..."
+                                sh 'docker builder prune -a -f'
+                                sh 'docker pull jenkins/agent:jdk17'
+                                sh 'docker build --no-cache -t veracode/jenkins .'
+                                sh 'docker inspect veracode/jenkins:latest'
+                                echo "[INFO] Build image process has finished."
+                                flagBuildSuccess = true
+                            }
+                            catch (Exception e) {
+                                unstable("${STAGE_NAME} failed!")
+                                currentBuild.result = 'FAILURE'
+                                flagBuildSuccess = false
+                            }
+                        }
+                    }
+                }
+                
+                // This stage runs Veracode Container Security to scan built container image
+                stage('Veracode Container Scan') {
+                    agent any
+                    when{
+                        equals expected: true, actual: flagBuildSuccess
+                    }
+                    steps {
+                        veracodeContainerScan("veracode/jenkins:latest")
+                    }
+                }
+            }
+        }
+    }
+}
