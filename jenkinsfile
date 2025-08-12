@@ -13,7 +13,7 @@ pipeline {
         product_id = 'ppag' // Custom Field - This value comes up from repo
         appProfileName = '' // This variable is instantiated in stage 'Setting Up Veracode Base Components'
         wkspSiteId = '' // This variable is instantiated in stage 'Setting Up Veracode Base Components'
-    }
+    }*/
 
     triggers {
         GenericTrigger(
@@ -22,11 +22,7 @@ pipeline {
             ],
             genericVariables: [
                 [key: 'ref', value: '$.ref'],
-                [key: 'action', value: '$.action', defaultValue: 'null'],
-                [key: 'repo_name', value: '$.repository.name', defaultValue: 'null'],
-                [key: 'repo_full_name', value: '$.repository.full_name', defaultValue: 'null'],
-                [key: 'origin_branch_name', value: '$.pull_request.head.ref', defaultValue: 'null'],
-                [key: 'target_branch_name', value: '$.pull_request.base.ref', defaultValue: 'null']
+                [key: 'action', value: '$.action', defaultValue: 'null']
             ],
             
             causeString: 'Triggered on $ref',
@@ -37,7 +33,7 @@ pipeline {
             printContributedVariables: true,
             printPostContent: true,
         )
-    }*/
+    }
 
     stages {
         // This Stage runs scans related to CD phase during SDLC
