@@ -12,17 +12,17 @@ dirmngr                 2.2.40-1.1              (won't fix)  deb           CVE-2
 dirmngr                 2.2.40-1.1                           deb           CVE-2022-3219        [0;34mNegligible[0m  
 dpkg                    1.21.22                 (won't fix)  deb           CVE-2025-6297        [0;31mHigh[0m        
 gcc-12-base             12.2.0-14+deb12u1                    deb           CVE-2022-27943       [0;34mNegligible[0m  
-git                     1:2.39.5-0+deb12u2                   deb           CVE-2025-46835       [0;31mHigh[0m        
-git                     1:2.39.5-0+deb12u2                   deb           CVE-2025-48384       [0;31mHigh[0m        
-git                     1:2.39.5-0+deb12u2                   deb           CVE-2025-48385       [0;31mHigh[0m        
-git                     1:2.39.5-0+deb12u2                   deb           CVE-2025-27613       [0;32mLow[0m         
+git                     1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-46835       [0;31mHigh[0m        
+git                     1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48384       [0;31mHigh[0m        
+git                     1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48385       [0;31mHigh[0m        
+git                     1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-27613       [0;32mLow[0m         
 git                     1:2.39.5-0+deb12u2                   deb           CVE-2018-1000021     [0;34mNegligible[0m  
 git                     1:2.39.5-0+deb12u2                   deb           CVE-2022-24975       [0;34mNegligible[0m  
 git                     1:2.39.5-0+deb12u2                   deb           CVE-2024-52005       [0;34mNegligible[0m  
-git-man                 1:2.39.5-0+deb12u2                   deb           CVE-2025-46835       [0;31mHigh[0m        
-git-man                 1:2.39.5-0+deb12u2                   deb           CVE-2025-48384       [0;31mHigh[0m        
-git-man                 1:2.39.5-0+deb12u2                   deb           CVE-2025-48385       [0;31mHigh[0m        
-git-man                 1:2.39.5-0+deb12u2                   deb           CVE-2025-27613       [0;32mLow[0m         
+git-man                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-46835       [0;31mHigh[0m        
+git-man                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48384       [0;31mHigh[0m        
+git-man                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48385       [0;31mHigh[0m        
+git-man                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-27613       [0;32mLow[0m         
 git-man                 1:2.39.5-0+deb12u2                   deb           CVE-2018-1000021     [0;34mNegligible[0m  
 git-man                 1:2.39.5-0+deb12u2                   deb           CVE-2022-24975       [0;34mNegligible[0m  
 git-man                 1:2.39.5-0+deb12u2                   deb           CVE-2024-52005       [0;34mNegligible[0m  
@@ -32,6 +32,8 @@ gpg-agent               2.2.40-1.1                           deb           CVE-2
 gpgv                    2.2.40-1.1              (won't fix)  deb           CVE-2025-30258       [0;32mLow[0m         
 gpgv                    2.2.40-1.1                           deb           CVE-2022-3219        [0;34mNegligible[0m  
 helm.sh/helm/v3         v3.17.3                 3.17.4       go-module     GHSA-557j-xg8c-q2mm  [0;31mHigh[0m        
+helm.sh/helm/v3         v3.17.3                 3.18.5       go-module     GHSA-9h84-qmv7-982p  [0;33mMedium[0m      
+helm.sh/helm/v3         v3.17.3                 3.18.5       go-module     GHSA-f9f8-9pmf-xv68  [0;33mMedium[0m      
 ini4j                   0.5.4                                java-archive  GHSA-jr6h-r7vg-f9mc  [0;31mHigh[0m        
 libapt-pkg6.0           2.6.1                                deb           CVE-2011-3374        [0;34mNegligible[0m  
 libbcprov-java          1.72-2                  (won't fix)  deb           CVE-2024-29857       [0;31mHigh[0m        
@@ -41,6 +43,7 @@ libbcprov-java          1.72-2                  (won't fix)  deb           CVE-2
 libbcprov-java          1.72-2                  (won't fix)  deb           CVE-2023-33202       [0;33mMedium[0m      
 libbcprov-java          1.72-2                  (won't fix)  deb           CVE-2024-30171       [0;33mMedium[0m      
 libbcprov-java          1.72-2                               deb           CVE-2025-8885        [0;33mMedium[0m      
+libbcprov-java          1.72-2                               deb           CVE-2025-8916        [0;33mMedium[0m      
 libblkid1               2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
 libc-bin                2.36-9+deb12u10         (won't fix)  deb           CVE-2025-4802        [0;31mHigh[0m        
 libc-bin                2.36-9+deb12u10         (won't fix)  deb           CVE-2025-8058        [0;33mMedium[0m      
@@ -198,7 +201,6 @@ python3.11-minimal      3.11.2-6+deb12u6        (won't fix)  deb           CVE-2
 python3.11-venv         3.11.2-6+deb12u6        (won't fix)  deb           CVE-2025-8194        [0;31mHigh[0m        
 python3.11-venv         3.11.2-6+deb12u6        (won't fix)  deb           CVE-2025-6069        [0;33mMedium[0m      
 python3.11-venv         3.11.2-6+deb12u6        (won't fix)  deb           CVE-2025-4516        [0;34mNegligible[0m  
-tar                     1.34+dfsg-1.2+deb12u1                deb           CVE-2025-45582       [0;33mMedium[0m      
 tar                     1.34+dfsg-1.2+deb12u1                deb           CVE-2005-2541        [0;34mNegligible[0m  
 unzip                   6.0-28                               deb           CVE-2021-4217        [0;34mNegligible[0m  
 util-linux              2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  

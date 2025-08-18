@@ -1,25 +1,21 @@
 
 Report Summary
 
-┌──────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
-│                    Target                    │  Type  │ Vulnerabilities │ Secrets │
-├──────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
-│ veracode-agente:v0-PS-Wrapper (debian 12.11) │ debian │       164       │    -    │
-├──────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
-│ opt/veracode/VeracodeJavaAPI.jar             │  jar   │        1        │    -    │
-├──────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
-│ opt/veracode/pipeline-scan.jar               │  jar   │        1        │    -    │
-├──────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
-│ usr/share/jenkins/agent.jar                  │  jar   │        0        │    -    │
-└──────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
+┌────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
+│                     Target                     │  Type  │ Vulnerabilities │ Secrets │
+├────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ veracode-agente:v0.1-BasicTools (debian 12.11) │ debian │       155       │    -    │
+├────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ usr/share/jenkins/agent.jar                    │  jar   │        0        │    -    │
+└────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
 Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
 
-veracode-agente:v0-PS-Wrapper (debian 12.11)
-============================================
-Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
+veracode-agente:v0.1-BasicTools (debian 12.11)
+==============================================
+Total: 155 (UNKNOWN: 1, LOW: 112, MEDIUM: 24, HIGH: 17, CRITICAL: 1)
 
 ┌────────────────────┬─────────────────────┬──────────┬──────────────┬────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │      Library       │    Vulnerability    │ Severity │    Status    │   Installed Version    │ Fixed Version │                            Title                             │
@@ -111,10 +107,6 @@ Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
 │                    │ CVE-2025-46835      │          │              │                        │               │ git: Git GUI can create and overwrite files for which the    │
 │                    │                     │          │              │                        │               │ user...                                                      │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2025-46835                   │
-├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ gnutls-bin         │ CVE-2011-3389       │          │              │ 3.7.9-2+deb12u5        │               │ HTTPS: block-wise chosen-plaintext attack against SSL/TLS    │
-│                    │                     │          │              │                        │               │ (BEAST)                                                      │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2011-3389                    │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ gpgv               │ CVE-2022-3219       │          │              │ 2.2.40-1.1             │               │ gnupg: denial of service issue (resource consumption) using  │
 │                    │                     │          │              │                        │               │ compressed packets                                           │
@@ -239,13 +231,9 @@ Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
 │                    │ CVE-2024-2236       │          │              │                        │               │ libgcrypt: vulnerable to Marvin Attack                       │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2024-2236                    │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libgnutls-dane0    │ CVE-2011-3389       │          │              │ 3.7.9-2+deb12u5        │               │ HTTPS: block-wise chosen-plaintext attack against SSL/TLS    │
+│ libgnutls30        │ CVE-2011-3389       │          │              │ 3.7.9-2+deb12u5        │               │ HTTPS: block-wise chosen-plaintext attack against SSL/TLS    │
 │                    │                     │          │              │                        │               │ (BEAST)                                                      │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2011-3389                    │
-├────────────────────┤                     │          │              │                        ├───────────────┤                                                              │
-│ libgnutls30        │                     │          │              │                        │               │                                                              │
-│                    │                     │          │              │                        │               │                                                              │
-│                    │                     │          │              │                        │               │                                                              │
 ├────────────────────┼─────────────────────┼──────────┤              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libgssapi-krb5-2   │ CVE-2025-3576       │ MEDIUM   │              │ 1.20.1-2+deb12u3       │               │ krb5: Kerberos RC4-HMAC-MD5 Checksum Vulnerability Enabling  │
 │                    │                     │          │              │                        │               │ Message Spoofing via MD5 Collisions                          │
@@ -386,7 +374,7 @@ Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
 │                    │                     │          │              │                        │               │ and chsh when compiled...                                    │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libssl3            │ CVE-2025-27587      │          │              │ 3.0.17-1~deb12u2       │               │ OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is   │
+│ libssl3            │ CVE-2025-27587      │          │              │ 3.0.17-1~deb12u1       │               │ OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is   │
 │                    │                     │          │              │                        │               │ vulnerable ......                                            │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2025-27587                   │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -431,22 +419,6 @@ Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
 │                    │ CVE-2023-31439      │          │              │                        │               │ An issue was discovered in systemd 253. An attacker can      │
 │                    │                     │          │              │                        │               │ modify the...                                                │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2023-31439                   │
-├────────────────────┼─────────────────────┼──────────┤              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libunbound8        │ CVE-2025-5994       │ HIGH     │              │ 1.17.1-2+deb12u2       │               │ unbound: Unbound Cache poisoning                             │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2025-5994                    │
-│                    ├─────────────────────┼──────────┤              │                        ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2024-8508       │ MEDIUM   │              │                        │               │ unbound: Unbounded name compression could lead to Denial of  │
-│                    │                     │          │              │                        │               │ Service                                                      │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2024-8508                    │
-│                    ├─────────────────────┼──────────┼──────────────┤                        ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2024-33655      │ LOW      │ will_not_fix │                        │               │ unbound: DNSBomb vulnerability                               │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2024-33655                   │
-│                    ├─────────────────────┤          ├──────────────┤                        ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2024-43167      │          │ affected     │                        │               │ unbound: NULL Pointer Dereference in Unbound                 │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2024-43167                   │
-│                    ├─────────────────────┤          │              │                        ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2024-43168      │          │              │                        │               │ unbound: Heap-Buffer-Overflow in Unbound                     │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2024-43168                   │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libuuid1           │ CVE-2022-0563       │          │              │ 2.38.1-5+deb12u3       │               │ util-linux: partial disclosure of arbitrary files in chfn    │
 │                    │                     │          │              │                        │               │ and chsh when compiled...                                    │
@@ -514,7 +486,7 @@ Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
 │                    │ CVE-2023-51767      │          │              │                        │               │ openssh: authentication bypass via row hammer attack         │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2023-51767                   │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl            │ CVE-2025-27587      │          │              │ 3.0.17-1~deb12u2       │               │ OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is   │
+│ openssl            │ CVE-2025-27587      │          │              │ 3.0.17-1~deb12u1       │               │ OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is   │
 │                    │                     │          │              │                        │               │ vulnerable ......                                            │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2025-27587                   │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -600,9 +572,6 @@ Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
 │                    │                     │          │              │                        │               │ https://security-tracker.debian.org/tracker/TEMP-0290435-0B- │
 │                    │                     │          │              │                        │               │ 57B5                                                         │
 ├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ unzip              │ CVE-2021-4217       │          │              │ 6.0-28                 │               │ unzip: Null pointer dereference in Unicode strings code      │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2021-4217                    │
-├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ util-linux         │ CVE-2022-0563       │          │              │ 2.38.1-5+deb12u3       │               │ util-linux: partial disclosure of arbitrary files in chfn    │
 │                    │                     │          │              │                        │               │ and chsh when compiled...                                    │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2022-0563                    │
@@ -610,27 +579,8 @@ Total: 164 (UNKNOWN: 1, LOW: 119, MEDIUM: 25, HIGH: 18, CRITICAL: 1)
 │ util-linux-extra   │                     │          │              │                        │               │                                                              │
 │                    │                     │          │              │                        │               │                                                              │
 │                    │                     │          │              │                        │               │                                                              │
-├────────────────────┼─────────────────────┤          │              ├────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ zip                │ CVE-2018-13410      │          │              │ 3.0-13                 │               │ Info-ZIP Zip 3.0, when the -T and -TT command-line options   │
-│                    │                     │          │              │                        │               │ are used,...                                                 │
-│                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2018-13410                   │
 ├────────────────────┼─────────────────────┼──────────┼──────────────┼────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ zlib1g             │ CVE-2023-45853      │ CRITICAL │ will_not_fix │ 1:1.2.13.dfsg-1        │               │ zlib: integer overflow and resultant heap-based buffer       │
 │                    │                     │          │              │                        │               │ overflow in zipOpenNewFileInZip4_6                           │
 │                    │                     │          │              │                        │               │ https://avd.aquasec.com/nvd/cve-2023-45853                   │
 └────────────────────┴─────────────────────┴──────────┴──────────────┴────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
-
-Java (jar)
-==========
-Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 1, CRITICAL: 0)
-
-┌──────────────────────────────────────────────────────┬────────────────┬──────────┬──────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
-│                       Library                        │ Vulnerability  │ Severity │  Status  │ Installed Version │ Fixed Version │                            Title                             │
-├──────────────────────────────────────────────────────┼────────────────┼──────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ org.apache.commons:commons-lang3 (pipeline-scan.jar) │ CVE-2025-48924 │ MEDIUM   │ fixed    │ 3.14.0            │ 3.18.0        │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
-│                                                      │                │          │          │                   │               │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
-│                                                      │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
-├──────────────────────────────────────────────────────┼────────────────┼──────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ org.ini4j:ini4j (VeracodeJavaAPI.jar)                │ CVE-2022-41404 │ HIGH     │ affected │ 0.5.4             │               │ org.ini4j: unspecified DoS                                   │
-│                                                      │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-41404                   │
-└──────────────────────────────────────────────────────┴────────────────┴──────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘

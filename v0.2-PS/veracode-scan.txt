@@ -31,7 +31,6 @@ gpg-agent           2.2.40-1.1              (won't fix)  deb           CVE-2025-
 gpg-agent           2.2.40-1.1                           deb           CVE-2022-3219        [0;34mNegligible[0m  
 gpgv                2.2.40-1.1              (won't fix)  deb           CVE-2025-30258       [0;32mLow[0m         
 gpgv                2.2.40-1.1                           deb           CVE-2022-3219        [0;34mNegligible[0m  
-ini4j               0.5.4                                java-archive  GHSA-jr6h-r7vg-f9mc  [0;31mHigh[0m        
 libapt-pkg6.0       2.6.1                                deb           CVE-2011-3374        [0;34mNegligible[0m  
 libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2024-29857       [0;31mHigh[0m        
 libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2024-30172       [0;31mHigh[0m        
@@ -223,7 +222,6 @@ Vulnerability	Found High software vulnerability: CVE-2025-48385
 Vulnerability	Found High software vulnerability: CVE-2025-5994                               	
 Vulnerability	Found High software vulnerability: CVE-2025-6020                               	
 Vulnerability	Found High software vulnerability: CVE-2025-6297                               	
-Vulnerability	Found High software vulnerability: GHSA-jr6h-r7vg-f9mc                         	
 Docker       	4.6 Ensure HEALTHCHECK instructions have been added to the container image     	
              	(Scored) level 1                                                               	
 Docker       	4.7 Ensure update/upgrade instructions are not used in the Dockerfile (Not     	
