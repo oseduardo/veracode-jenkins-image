@@ -1,0 +1,233 @@
+Vulnerabilities
+NAME                INSTALLED               FIXED-IN     TYPE          VULNERABILITY        SEVERITY   
+apt                 2.6.1                                deb           CVE-2011-3374        [0;34mNegligible[0m  
+bsdutils            1:2.38.1-5+deb12u3                   deb           CVE-2022-0563        [0;34mNegligible[0m  
+commons-lang3       3.14.0                  3.18.0       java-archive  GHSA-j288-q9x7-2f5v  [0;33mMedium[0m      
+coreutils           9.1-1                   (won't fix)  deb           CVE-2016-2781        [0;32mLow[0m         
+coreutils           9.1-1                                deb           CVE-2017-18018       [0;34mNegligible[0m  
+coreutils           9.1-1                                deb           CVE-2025-5278        [0;34mNegligible[0m  
+curl                7.88.1-10+deb12u12                   deb           CVE-2024-2379        [0;34mNegligible[0m  
+curl                7.88.1-10+deb12u12                   deb           CVE-2025-0725        [0;34mNegligible[0m  
+dirmngr             2.2.40-1.1              (won't fix)  deb           CVE-2025-30258       [0;32mLow[0m         
+dirmngr             2.2.40-1.1                           deb           CVE-2022-3219        [0;34mNegligible[0m  
+dpkg                1.21.22                 (won't fix)  deb           CVE-2025-6297        [0;31mHigh[0m        
+gcc-12-base         12.2.0-14+deb12u1                    deb           CVE-2022-27943       [0;34mNegligible[0m  
+git                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-46835       [0;31mHigh[0m        
+git                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48384       [0;31mHigh[0m        
+git                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48385       [0;31mHigh[0m        
+git                 1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-27613       [0;32mLow[0m         
+git                 1:2.39.5-0+deb12u2                   deb           CVE-2018-1000021     [0;34mNegligible[0m  
+git                 1:2.39.5-0+deb12u2                   deb           CVE-2022-24975       [0;34mNegligible[0m  
+git                 1:2.39.5-0+deb12u2                   deb           CVE-2024-52005       [0;34mNegligible[0m  
+git-man             1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-46835       [0;31mHigh[0m        
+git-man             1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48384       [0;31mHigh[0m        
+git-man             1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-48385       [0;31mHigh[0m        
+git-man             1:2.39.5-0+deb12u2      (won't fix)  deb           CVE-2025-27613       [0;32mLow[0m         
+git-man             1:2.39.5-0+deb12u2                   deb           CVE-2018-1000021     [0;34mNegligible[0m  
+git-man             1:2.39.5-0+deb12u2                   deb           CVE-2022-24975       [0;34mNegligible[0m  
+git-man             1:2.39.5-0+deb12u2                   deb           CVE-2024-52005       [0;34mNegligible[0m  
+gnutls-bin          3.7.9-2+deb12u5                      deb           CVE-2011-3389        [0;34mNegligible[0m  
+gpg-agent           2.2.40-1.1              (won't fix)  deb           CVE-2025-30258       [0;32mLow[0m         
+gpg-agent           2.2.40-1.1                           deb           CVE-2022-3219        [0;34mNegligible[0m  
+gpgv                2.2.40-1.1              (won't fix)  deb           CVE-2025-30258       [0;32mLow[0m         
+gpgv                2.2.40-1.1                           deb           CVE-2022-3219        [0;34mNegligible[0m  
+ini4j               0.5.4                                java-archive  GHSA-jr6h-r7vg-f9mc  [0;31mHigh[0m        
+libapt-pkg6.0       2.6.1                                deb           CVE-2011-3374        [0;34mNegligible[0m  
+libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2024-29857       [0;31mHigh[0m        
+libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2024-30172       [0;31mHigh[0m        
+libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2024-34447       [0;31mHigh[0m        
+libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2023-33201       [0;33mMedium[0m      
+libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2023-33202       [0;33mMedium[0m      
+libbcprov-java      1.72-2                  (won't fix)  deb           CVE-2024-30171       [0;33mMedium[0m      
+libbcprov-java      1.72-2                               deb           CVE-2025-8885        [0;33mMedium[0m      
+libbcprov-java      1.72-2                               deb           CVE-2025-8916        [0;33mMedium[0m      
+libblkid1           2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
+libc-bin            2.36-9+deb12u10         (won't fix)  deb           CVE-2025-4802        [0;31mHigh[0m        
+libc-bin            2.36-9+deb12u10         (won't fix)  deb           CVE-2025-8058        [0;33mMedium[0m      
+libc-bin            2.36-9+deb12u10                      deb           CVE-2010-4756        [0;34mNegligible[0m  
+libc-bin            2.36-9+deb12u10                      deb           CVE-2018-20796       [0;34mNegligible[0m  
+libc-bin            2.36-9+deb12u10                      deb           CVE-2019-1010022     [0;34mNegligible[0m  
+libc-bin            2.36-9+deb12u10                      deb           CVE-2019-1010023     [0;34mNegligible[0m  
+libc-bin            2.36-9+deb12u10                      deb           CVE-2019-1010024     [0;34mNegligible[0m  
+libc-bin            2.36-9+deb12u10                      deb           CVE-2019-1010025     [0;34mNegligible[0m  
+libc-bin            2.36-9+deb12u10                      deb           CVE-2019-9192        [0;34mNegligible[0m  
+libc6               2.36-9+deb12u10         (won't fix)  deb           CVE-2025-4802        [0;31mHigh[0m        
+libc6               2.36-9+deb12u10         (won't fix)  deb           CVE-2025-8058        [0;33mMedium[0m      
+libc6               2.36-9+deb12u10                      deb           CVE-2010-4756        [0;34mNegligible[0m  
+libc6               2.36-9+deb12u10                      deb           CVE-2018-20796       [0;34mNegligible[0m  
+libc6               2.36-9+deb12u10                      deb           CVE-2019-1010022     [0;34mNegligible[0m  
+libc6               2.36-9+deb12u10                      deb           CVE-2019-1010023     [0;34mNegligible[0m  
+libc6               2.36-9+deb12u10                      deb           CVE-2019-1010024     [0;34mNegligible[0m  
+libc6               2.36-9+deb12u10                      deb           CVE-2019-1010025     [0;34mNegligible[0m  
+libc6               2.36-9+deb12u10                      deb           CVE-2019-9192        [0;34mNegligible[0m  
+libcurl3-gnutls     7.88.1-10+deb12u12                   deb           CVE-2024-2379        [0;34mNegligible[0m  
+libcurl3-gnutls     7.88.1-10+deb12u12                   deb           CVE-2025-0725        [0;34mNegligible[0m  
+libcurl4            7.88.1-10+deb12u12                   deb           CVE-2024-2379        [0;34mNegligible[0m  
+libcurl4            7.88.1-10+deb12u12                   deb           CVE-2025-0725        [0;34mNegligible[0m  
+libexpat1           2.5.0-1+deb12u1         (won't fix)  deb           CVE-2023-52425       [0;31mHigh[0m        
+libexpat1           2.5.0-1+deb12u1         (won't fix)  deb           CVE-2024-8176        [0;31mHigh[0m        
+libexpat1           2.5.0-1+deb12u1         (won't fix)  deb           CVE-2024-50602       [0;33mMedium[0m      
+libexpat1           2.5.0-1+deb12u1                      deb           CVE-2023-52426       [0;34mNegligible[0m  
+libexpat1           2.5.0-1+deb12u1                      deb           CVE-2024-28757       [0;34mNegligible[0m  
+libgcc-s1           12.2.0-14+deb12u1                    deb           CVE-2022-27943       [0;34mNegligible[0m  
+libgcrypt20         1.10.1-3                             deb           CVE-2018-6829        [0;34mNegligible[0m  
+libgcrypt20         1.10.1-3                             deb           CVE-2024-2236        [0;34mNegligible[0m  
+libglib2.0-0        2.74.6-2+deb12u6        (won't fix)  deb           CVE-2025-4373        [0;33mMedium[0m      
+libglib2.0-0        2.74.6-2+deb12u6                     deb           CVE-2012-0039        [0;34mNegligible[0m  
+libglib2.0-0        2.74.6-2+deb12u6        (won't fix)  deb           CVE-2025-7039        [0;0mUnknown[0m     
+libgnutls-dane0     3.7.9-2+deb12u5                      deb           CVE-2011-3389        [0;34mNegligible[0m  
+libgnutls30         3.7.9-2+deb12u5                      deb           CVE-2011-3389        [0;34mNegligible[0m  
+libgssapi-krb5-2    1.20.1-2+deb12u3        (won't fix)  deb           CVE-2025-3576        [0;33mMedium[0m      
+libgssapi-krb5-2    1.20.1-2+deb12u3                     deb           CVE-2018-5709        [0;34mNegligible[0m  
+libgssapi-krb5-2    1.20.1-2+deb12u3                     deb           CVE-2024-26458       [0;34mNegligible[0m  
+libgssapi-krb5-2    1.20.1-2+deb12u3                     deb           CVE-2024-26461       [0;34mNegligible[0m  
+libk5crypto3        1.20.1-2+deb12u3        (won't fix)  deb           CVE-2025-3576        [0;33mMedium[0m      
+libk5crypto3        1.20.1-2+deb12u3                     deb           CVE-2018-5709        [0;34mNegligible[0m  
+libk5crypto3        1.20.1-2+deb12u3                     deb           CVE-2024-26458       [0;34mNegligible[0m  
+libk5crypto3        1.20.1-2+deb12u3                     deb           CVE-2024-26461       [0;34mNegligible[0m  
+libkrb5-3           1.20.1-2+deb12u3        (won't fix)  deb           CVE-2025-3576        [0;33mMedium[0m      
+libkrb5-3           1.20.1-2+deb12u3                     deb           CVE-2018-5709        [0;34mNegligible[0m  
+libkrb5-3           1.20.1-2+deb12u3                     deb           CVE-2024-26458       [0;34mNegligible[0m  
+libkrb5-3           1.20.1-2+deb12u3                     deb           CVE-2024-26461       [0;34mNegligible[0m  
+libkrb5support0     1.20.1-2+deb12u3        (won't fix)  deb           CVE-2025-3576        [0;33mMedium[0m      
+libkrb5support0     1.20.1-2+deb12u3                     deb           CVE-2018-5709        [0;34mNegligible[0m  
+libkrb5support0     1.20.1-2+deb12u3                     deb           CVE-2024-26458       [0;34mNegligible[0m  
+libkrb5support0     1.20.1-2+deb12u3                     deb           CVE-2024-26461       [0;34mNegligible[0m  
+libldap-2.5-0       2.5.13+dfsg-5           (won't fix)  deb           CVE-2023-2953        [0;31mHigh[0m        
+libldap-2.5-0       2.5.13+dfsg-5                        deb           CVE-2015-3276        [0;34mNegligible[0m  
+libldap-2.5-0       2.5.13+dfsg-5                        deb           CVE-2017-14159       [0;34mNegligible[0m  
+libldap-2.5-0       2.5.13+dfsg-5                        deb           CVE-2017-17740       [0;34mNegligible[0m  
+libldap-2.5-0       2.5.13+dfsg-5                        deb           CVE-2020-15719       [0;34mNegligible[0m  
+libmount1           2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
+libpam-modules      1.5.2-6+deb12u1                      deb           CVE-2025-6020        [0;31mHigh[0m        
+libpam-modules      1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-10041       [0;33mMedium[0m      
+libpam-modules      1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-22365       [0;33mMedium[0m      
+libpam-modules-bin  1.5.2-6+deb12u1                      deb           CVE-2025-6020        [0;31mHigh[0m        
+libpam-modules-bin  1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-10041       [0;33mMedium[0m      
+libpam-modules-bin  1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-22365       [0;33mMedium[0m      
+libpam-runtime      1.5.2-6+deb12u1                      deb           CVE-2025-6020        [0;31mHigh[0m        
+libpam-runtime      1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-10041       [0;33mMedium[0m      
+libpam-runtime      1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-22365       [0;33mMedium[0m      
+libpam0g            1.5.2-6+deb12u1                      deb           CVE-2025-6020        [0;31mHigh[0m        
+libpam0g            1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-10041       [0;33mMedium[0m      
+libpam0g            1.5.2-6+deb12u1         (won't fix)  deb           CVE-2024-22365       [0;33mMedium[0m      
+libperl5.36         5.36.0-7+deb12u2        (won't fix)  deb           CVE-2023-31484       [0;31mHigh[0m        
+libperl5.36         5.36.0-7+deb12u2        (won't fix)  deb           CVE-2025-40909       [0;33mMedium[0m      
+libperl5.36         5.36.0-7+deb12u2                     deb           CVE-2011-4116        [0;34mNegligible[0m  
+libperl5.36         5.36.0-7+deb12u2                     deb           CVE-2023-31486       [0;34mNegligible[0m  
+libpng16-16         1.6.39-2                             deb           CVE-2021-4214        [0;34mNegligible[0m  
+libsmartcols1       2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
+libssl3             3.0.17-1~deb12u2                     deb           CVE-2025-27587       [0;34mNegligible[0m  
+libstdc++6          12.2.0-14+deb12u1                    deb           CVE-2022-27943       [0;34mNegligible[0m  
+libsystemd0         252.38-1~deb12u1                     deb           CVE-2013-4392        [0;34mNegligible[0m  
+libsystemd0         252.38-1~deb12u1                     deb           CVE-2023-31437       [0;34mNegligible[0m  
+libsystemd0         252.38-1~deb12u1                     deb           CVE-2023-31438       [0;34mNegligible[0m  
+libsystemd0         252.38-1~deb12u1                     deb           CVE-2023-31439       [0;34mNegligible[0m  
+libtinfo6           6.4-4                   (won't fix)  deb           CVE-2023-50495       [0;33mMedium[0m      
+libtinfo6           6.4-4                   (won't fix)  deb           CVE-2025-6141        [0;32mLow[0m         
+libudev1            252.38-1~deb12u1                     deb           CVE-2013-4392        [0;34mNegligible[0m  
+libudev1            252.38-1~deb12u1                     deb           CVE-2023-31437       [0;34mNegligible[0m  
+libudev1            252.38-1~deb12u1                     deb           CVE-2023-31438       [0;34mNegligible[0m  
+libudev1            252.38-1~deb12u1                     deb           CVE-2023-31439       [0;34mNegligible[0m  
+libunbound8         1.17.1-2+deb12u2        (won't fix)  deb           CVE-2024-33655       [0;31mHigh[0m        
+libunbound8         1.17.1-2+deb12u2                     deb           CVE-2025-5994        [0;31mHigh[0m        
+libunbound8         1.17.1-2+deb12u2        (won't fix)  deb           CVE-2024-8508        [0;33mMedium[0m      
+libunbound8         1.17.1-2+deb12u2                     deb           CVE-2024-43167       [0;34mNegligible[0m  
+libunbound8         1.17.1-2+deb12u2                     deb           CVE-2024-43168       [0;34mNegligible[0m  
+libuuid1            2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
+login               1:4.13+dfsg1-1+deb12u1  (won't fix)  deb           CVE-2024-56433       [0;32mLow[0m         
+login               1:4.13+dfsg1-1+deb12u1               deb           CVE-2007-5686        [0;34mNegligible[0m  
+mount               2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
+ncurses-base        6.4-4                   (won't fix)  deb           CVE-2023-50495       [0;33mMedium[0m      
+ncurses-base        6.4-4                   (won't fix)  deb           CVE-2025-6141        [0;32mLow[0m         
+ncurses-bin         6.4-4                   (won't fix)  deb           CVE-2023-50495       [0;33mMedium[0m      
+ncurses-bin         6.4-4                   (won't fix)  deb           CVE-2025-6141        [0;32mLow[0m         
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2007-2243        [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2007-2768        [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2008-3234        [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2016-20012       [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2018-15919       [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2019-6110        [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2020-14145       [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2020-15778       [0;34mNegligible[0m  
+openssh-client      1:9.2p1-2+deb12u7                    deb           CVE-2023-51767       [0;34mNegligible[0m  
+openssl             3.0.17-1~deb12u2                     deb           CVE-2025-27587       [0;34mNegligible[0m  
+passwd              1:4.13+dfsg1-1+deb12u1  (won't fix)  deb           CVE-2024-56433       [0;32mLow[0m         
+passwd              1:4.13+dfsg1-1+deb12u1               deb           CVE-2007-5686        [0;34mNegligible[0m  
+patch               2.7.6-7                              deb           CVE-2010-4651        [0;34mNegligible[0m  
+patch               2.7.6-7                              deb           CVE-2018-6951        [0;34mNegligible[0m  
+patch               2.7.6-7                              deb           CVE-2018-6952        [0;34mNegligible[0m  
+patch               2.7.6-7                              deb           CVE-2021-45261       [0;34mNegligible[0m  
+perl                5.36.0-7+deb12u2        (won't fix)  deb           CVE-2023-31484       [0;31mHigh[0m        
+perl                5.36.0-7+deb12u2        (won't fix)  deb           CVE-2025-40909       [0;33mMedium[0m      
+perl                5.36.0-7+deb12u2                     deb           CVE-2011-4116        [0;34mNegligible[0m  
+perl                5.36.0-7+deb12u2                     deb           CVE-2023-31486       [0;34mNegligible[0m  
+perl-base           5.36.0-7+deb12u2        (won't fix)  deb           CVE-2023-31484       [0;31mHigh[0m        
+perl-base           5.36.0-7+deb12u2        (won't fix)  deb           CVE-2025-40909       [0;33mMedium[0m      
+perl-base           5.36.0-7+deb12u2                     deb           CVE-2011-4116        [0;34mNegligible[0m  
+perl-base           5.36.0-7+deb12u2                     deb           CVE-2023-31486       [0;34mNegligible[0m  
+perl-modules-5.36   5.36.0-7+deb12u2        (won't fix)  deb           CVE-2023-31484       [0;31mHigh[0m        
+perl-modules-5.36   5.36.0-7+deb12u2        (won't fix)  deb           CVE-2025-40909       [0;33mMedium[0m      
+perl-modules-5.36   5.36.0-7+deb12u2                     deb           CVE-2011-4116        [0;34mNegligible[0m  
+perl-modules-5.36   5.36.0-7+deb12u2                     deb           CVE-2023-31486       [0;34mNegligible[0m  
+tar                 1.34+dfsg-1.2+deb12u1                deb           CVE-2005-2541        [0;34mNegligible[0m  
+unzip               6.0-28                               deb           CVE-2021-4217        [0;34mNegligible[0m  
+util-linux          2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
+util-linux-extra    2.38.1-5+deb12u3                     deb           CVE-2022-0563        [0;34mNegligible[0m  
+zip                 3.0-13                               deb           CVE-2018-13410       [0;34mNegligible[0m  
+
+No misconfigurations found
+
+No secrets found
+
+Policy Results
+TYPE         	MESSAGE                                                                         
+             	4.8 Level 1 benchmark - setgid file permission validation: (/usr/bin/chage,    	
+             	20000755)                                                                      	
+             	4.8 Level 1 benchmark - setgid file permission validation: (/usr/bin/expiry,   	
+             	20000755)                                                                      	
+             	4.8 Level 1 benchmark - setgid file permission validation: (/usr/bin/ssh-agent,	
+             	20000755)                                                                      	
+             	4.8 Level 1 benchmark - setgid file permission validation:                     	
+             	(/usr/sbin/unix_chkpwd, 20000755)                                              	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/chfn,     	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/chsh,     	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/gpasswd,  	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/mount,    	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/newgrp,   	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/passwd,   	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/su,       	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation: (/usr/bin/umount,   	
+             	40000755)                                                                      	
+             	4.8 Level 1 benchmark - setuid file permission validation:                     	
+             	(/usr/lib/openssh/ssh-keysign, 40000755)                                       	
+Vulnerability	Found High software vulnerability: CVE-2023-2953                               	
+Vulnerability	Found High software vulnerability: CVE-2023-31484                              	
+Vulnerability	Found High software vulnerability: CVE-2023-52425                              	
+Vulnerability	Found High software vulnerability: CVE-2024-29857                              	
+Vulnerability	Found High software vulnerability: CVE-2024-30172                              	
+Vulnerability	Found High software vulnerability: CVE-2024-33655                              	
+Vulnerability	Found High software vulnerability: CVE-2024-34447                              	
+Vulnerability	Found High software vulnerability: CVE-2024-8176                               	
+Vulnerability	Found High software vulnerability: CVE-2025-46835                              	
+Vulnerability	Found High software vulnerability: CVE-2025-4802                               	
+Vulnerability	Found High software vulnerability: CVE-2025-48384                              	
+Vulnerability	Found High software vulnerability: CVE-2025-48385                              	
+Vulnerability	Found High software vulnerability: CVE-2025-5994                               	
+Vulnerability	Found High software vulnerability: CVE-2025-6020                               	
+Vulnerability	Found High software vulnerability: CVE-2025-6297                               	
+Vulnerability	Found High software vulnerability: GHSA-jr6h-r7vg-f9mc                         	
+Docker       	4.6 Ensure HEALTHCHECK instructions have been added to the container image     	
+             	(Scored) level 1                                                               	
+Docker       	4.7 Ensure update/upgrade instructions are not used in the Dockerfile (Not     	
+             	Scored) level 1                                                                	
+Docker       	4.9 Ensure COPY is used instead of ADD in Dockerfile (Not Scored) level 1      	
+
+Policy Passed = false
