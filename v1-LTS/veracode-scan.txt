@@ -34,7 +34,6 @@ gpgv                    2.2.40-1.1                           deb           CVE-2
 helm.sh/helm/v3         v3.17.3                 3.17.4       go-module     GHSA-557j-xg8c-q2mm  [0;31mHigh[0m        
 helm.sh/helm/v3         v3.17.3                 3.18.5       go-module     GHSA-9h84-qmv7-982p  [0;33mMedium[0m      
 helm.sh/helm/v3         v3.17.3                 3.18.5       go-module     GHSA-f9f8-9pmf-xv68  [0;33mMedium[0m      
-ini4j                   0.5.4                                java-archive  GHSA-jr6h-r7vg-f9mc  [0;31mHigh[0m        
 libapt-pkg6.0           2.6.1                                deb           CVE-2011-3374        [0;34mNegligible[0m  
 libbcprov-java          1.72-2                  (won't fix)  deb           CVE-2024-29857       [0;31mHigh[0m        
 libbcprov-java          1.72-2                  (won't fix)  deb           CVE-2024-30172       [0;31mHigh[0m        
@@ -259,7 +258,6 @@ Vulnerability	Found High software vulnerability: CVE-2025-6020
 Vulnerability	Found High software vulnerability: CVE-2025-6297                               	
 Vulnerability	Found High software vulnerability: CVE-2025-8194                               	
 Vulnerability	Found High software vulnerability: GHSA-557j-xg8c-q2mm                         	
-Vulnerability	Found High software vulnerability: GHSA-jr6h-r7vg-f9mc                         	
 Docker       	4.6 Ensure HEALTHCHECK instructions have been added to the container image     	
              	(Scored) level 1                                                               	
 Docker       	4.7 Ensure update/upgrade instructions are not used in the Dockerfile (Not     	

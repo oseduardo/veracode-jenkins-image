@@ -78,7 +78,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 
 ### ==== Veracode API Wrapper ====
-ENV VERSION="24.10.15.0" \
+ENV VERSION="25.8.16.1" \
     ARTIFACT_NAME="vosp-api-wrappers-java" \
     INSTALL_DIR="/opt/veracode"
 
