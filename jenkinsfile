@@ -35,11 +35,13 @@ pipeline {
         )
     }
 
-    stage('Prueba'){
-        agent any
-        steps{
-            script{
-                echo "Aqui vamos!"
+    stages {
+        stage('Prueba'){
+            agent any
+            steps{
+                script{
+                    echo "Aqui vamos!"
+                }
             }
         }
     }
