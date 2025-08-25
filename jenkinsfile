@@ -50,7 +50,7 @@ pipeline {
                 script{
                     echo "[INFO] Starting validation..."
                     sh 'ls -all /home/luser'
-                    sh 'find ~/ -name "credentialsfile"'
+                    sh 'whoami'
                 }
             }
         }
