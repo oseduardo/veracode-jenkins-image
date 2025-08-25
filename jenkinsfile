@@ -44,7 +44,6 @@ pipeline {
                     image 'veracode-agente:latest'
                     args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY'
                     reuseNode true
-                    command "/bin/sh"
                 }
             }
 
