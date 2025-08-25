@@ -3,15 +3,7 @@
 //@Library("veracodeGlobalSharedLibrary") _
 pipeline {
 
-//    agent any
-    agent {
-        docker { 
-            //It uses veracode-agente:latest docker image to run pipeline stages
-            image 'veracode-agente:latest'
-            args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY'
-            reuseNode true
-        }
-    }
+    agent any
 
     /*environment {
         vID     = credentials('VID')
@@ -45,7 +37,16 @@ pipeline {
 
     stages {
         stage('Prueba'){
-//            agent any
+
+            agent {
+                docker { 
+                    //It uses veracode-agente:latest docker image to run pipeline stages
+                    image 'veracode-agente:latest'
+                    args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY'
+                    reuseNode true
+                }
+            }
+
             steps{
                 script{
                     echo "Aqui vamos!"
