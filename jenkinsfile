@@ -35,8 +35,17 @@ pipeline {
         )
     }
 
-    stage('Veracode Security Scans'){
+    stage('Prueba'){
         agent any
+        steps{
+            script{
+                echo "Aqui vamos!"
+            }
+        }
+    }
+
+/*    stage('Veracode Security Scans'){
+        agent any*/
 /*            agent {
                 docker { 
                     //It uses veracode-agente:latest docker image to run pipeline stages
@@ -45,7 +54,7 @@ pipeline {
                     reuseNode true
                 }
             }*/
-        stages{
+/*        stages{
             steps {
                 stage('Docker Image Validation'){
                     script {
@@ -61,6 +70,5 @@ pipeline {
                 }
             }
         }
-    }
-
+    }*/
 }
