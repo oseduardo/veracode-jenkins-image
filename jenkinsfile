@@ -1,6 +1,6 @@
-boolean flagBuildSuccess = false
+//boolean flagBuildSuccess = false
 
-@Library("veracodeGlobalSharedLibrary") _
+//@Library("veracodeGlobalSharedLibrary") _
 pipeline {
 
     agent any
@@ -36,40 +36,24 @@ pipeline {
     }
 
     stages {
-        // This Stage runs scans related to CD phase during SDLC
-        // Containers Scan
-        stage('Veracode Container Scan'){
-            stages{
-                // This stage builds the container image to be scanned during CD pipeline
-                stage('Build Container Image'){
-                    steps {
-                        script {
-                            try {
-                                echo "[INFO] Starting image build process..."
-                                sh 'docker builder prune -a -f'
-                                sh 'docker pull jenkins/agent:jdk17'
-                                sh 'docker build --no-cache -t veracode/jenkins .'
-                                sh 'docker inspect veracode/jenkins:latest'
-                                echo "[INFO] Build image process has finished."
-                                flagBuildSuccess = true
-                            }
-                            catch (Exception e) {
-                                unstable("${STAGE_NAME} failed!")
-                                currentBuild.result = 'FAILURE'
-                                flagBuildSuccess = false
-                            }
-                        }
-                    }
+        stage('Veracode Security Scans'){
+            agent {
+                docker { 
+                    //It uses veracode-agente:latest docker image to run pipeline stages
+                    image 'veracode-agente:latest'
+                    args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY'
+                    reuseNode true
                 }
-                
-                // This stage runs Veracode Container Security to scan built container image
-                stage('Veracode Container Scan') {
-                    agent any
-                    when{
-                        equals expected: true, actual: flagBuildSuccess
+            }
+            steps {
+                script {
+                    try {
+                        echo "[INFO] Starting......"
+                        sh 'ls -all /home/luser'
                     }
-                    steps {
-                        veracodeContainerScan("veracode/jenkins:latest")
+                    catch (Exception e) {
+                        unstable("Process failed!")
+                        currentBuild.result = 'FAILURE'
                     }
                 }
             }
