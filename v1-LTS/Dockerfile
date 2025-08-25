@@ -99,5 +99,6 @@ RUN useradd -m -d /home/luser -s /bin/bash luser
 USER luser
 WORKDIR /home/luser
 ENV PATH="/opt/venv/bin:$PATH"
+ENTRYPOINT ["/bin/sh"]
 
 USER jenkins
