@@ -48,7 +48,8 @@ pipeline {
 
             steps{
                 script{
-                    echo "Aqui vamos!"
+                    echo "[INFO] Starting validation..."
+                    sh 'ls -all /home/luser'
                 }
             }
         }
