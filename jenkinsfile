@@ -35,9 +35,8 @@ pipeline {
         )
     }
 
-    stages {
-        stage('Veracode Security Scans'){
-            agent any
+    stage('Veracode Security Scans'){
+        agent any
 /*            agent {
                 docker { 
                     //It uses veracode-agente:latest docker image to run pipeline stages
@@ -46,22 +45,22 @@ pipeline {
                     reuseNode true
                 }
             }*/
-            stages{
-                steps {
-                    stage('Docker Image Validation'){
-                        script {
-                            try {
-                                echo "[INFO] Starting......"
-                                sh 'ls -all /home/luser'
-                            }
-                            catch (Exception e) {
-                                unstable("Process failed!")
-                                currentBuild.result = 'FAILURE'
-                            }
+        stages{
+            steps {
+                stage('Docker Image Validation'){
+                    script {
+                        try {
+                            echo "[INFO] Starting......"
+                            sh 'ls -all /home/luser'                            
+                        }
+                        catch (Exception e) {
+                            unstable("Process failed!")
+                            currentBuild.result = 'FAILURE'
                         }
                     }
                 }
             }
         }
     }
+
 }
