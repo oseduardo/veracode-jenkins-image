@@ -8,6 +8,8 @@ echo ""
 
 pwd
 ls -all
+echo $PATH
+echo $HOME
 cat $HOME/.veracode/credentials
 echo ""
 echo ""
