@@ -55,8 +55,7 @@ pipeline {
                     //sh "echo 'pruebita'"
                     //sh "ls -all ${HOME}"
                     //sh 'cat'
-                    //sh 'pwd'
-                    echo "Prueba..."
+                    sh 'pwd'
                 }
             }
         }
