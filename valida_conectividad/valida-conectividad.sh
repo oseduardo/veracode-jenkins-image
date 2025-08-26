@@ -6,6 +6,8 @@ echo "======================================================="
 echo ""
 echo ""
 
+pwd
+ls -all
 cat $HOME/.veracode/credentials
 echo ""
 echo ""
