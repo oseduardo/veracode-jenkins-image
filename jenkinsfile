@@ -1,12 +1,11 @@
 pipeline {
 
-    agent {
-        docker { 
-            //It uses veracode-agente:latest docker image to run pipeline stages
-            image 'veracode-agente:latest'
-            args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY -i --entrypoint='
-            reuseNode true
-        }
+    agent any
+
+    environment {
+        vID     = credentials('veracode-creds').username
+        vKEY    = credentials('veracode-creds').password
+        //SRCCLR_API_TOKEN = credentials('SRCCLR_API_TOKEN')
     }
 
     triggers {
@@ -31,6 +30,14 @@ pipeline {
 
     stages {
         stage('Valida Conectividad'){
+            agent {
+                docker { 
+                    //It uses veracode-agente:latest docker image to run pipeline stages
+                    image 'veracode-agente:latest'
+                    args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY -i --entrypoint='
+                    reuseNode true
+                }
+            }
             steps{
                 script{
                     echo "===================================================="

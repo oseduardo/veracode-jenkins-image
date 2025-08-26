@@ -9,7 +9,6 @@ echo ""
 pwd
 ls -all
 echo $PATH
-echo $HOME
 cat /var/lib/jenkins/.veracode/credentials
 echo ""
 echo ""
