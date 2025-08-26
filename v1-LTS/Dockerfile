@@ -101,4 +101,7 @@ WORKDIR /home/luser
 ENV PATH="/opt/venv/bin:$PATH"
 ENTRYPOINT ["/bin/sh"]
 
+USER root
+RUN chmod +x -R $HOME
+
 USER jenkins
