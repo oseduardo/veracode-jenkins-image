@@ -49,7 +49,7 @@ pipeline {
             steps{
                 script{
                     echo "[INFO] Setting up Veracode Credentials File..."
-                    sh 'cd $HOME'
+                    sh 'ls -all ' ${HOME}
                     sh 'pwd'
                 }
             }
