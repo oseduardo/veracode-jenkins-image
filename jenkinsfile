@@ -55,8 +55,7 @@ pipeline {
                     sh "echo -e '[default]\nveracode_api_key_id=myVID\nveracode_api_key_secret=myVKEY' > ${HOME}/.veracode/credentials"
                     sh "echo 'pruebita'"
                     sh "ls -all ${HOME}/.veracode"
-                    //sh 'cat'
-                    sh 'pwd'
+                    sh "cat ${HOME}/.veracode/credentials"
                 }
             }
         }
