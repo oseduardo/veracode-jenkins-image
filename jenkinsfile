@@ -39,7 +39,7 @@ pipeline {
             }
             steps{
                 script{
-/*                    echo "===================================================="
+                    /*echo "===================================================="
                     echo "== [INFO] Setting up Veracode Credentials File... =="
                     echo "===================================================="
                     echo ""
@@ -47,15 +47,15 @@ pipeline {
                         def myVID = VID
                         def myVKEY = VKEY
                         sh "echo '[default]\nveracode_api_key_id=${myVID}\nveracode_api_key_secret=${myVKEY}' > ${HOME}/.veracode/credentials"
-                    echo ""
-                    echo ""*/
+                        echo ""
+                        echo ""
+                    }*/
 
                     echo "======================================================"
                     echo "== [INFO] Running connectivity validation script... =="
                     echo "======================================================"
                     echo ""
                     sh './valida_conectividad/valida-conectividad.sh'
-                    }
                 }
             }
         }
