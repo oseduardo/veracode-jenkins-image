@@ -52,9 +52,9 @@ pipeline {
                     sh "ls -all ${HOME}"
                     //sh "chmod +x -R ${HOME}"
                     sh "mkdir -p ${HOME}/.veracode"
-                    sh "echo -e '[default]\nveracode_api_key_id=myVID\nveracode_api_key_secret=myVKEY'"
+                    sh "echo -e '[default]\nveracode_api_key_id=myVID\nveracode_api_key_secret=myVKEY' > ${HOME}/.veracode/credentials"
                     sh "echo 'pruebita'"
-                    sh "ls -all ${HOME}"
+                    sh "ls -all ${HOME}/.veracode"
                     //sh 'cat'
                     sh 'pwd'
                 }
