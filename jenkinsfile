@@ -50,11 +50,12 @@ pipeline {
                 script{
                     echo "[INFO] Setting up Veracode Credentials File..."
                     sh "ls -all ${HOME}"
-                    //sh "chmod +x -R ${HOME}"
                     sh "mkdir -p ${HOME}/.veracode"
-                    sh "echo '[default]\nveracode_api_key_id=myVID\nveracode_api_key_secret=myVKEY' > ${HOME}/.veracode/credentials"
-                    sh "echo 'pruebita'"
-                    sh "ls -all ${HOME}/.veracode"
+                    withCredentials([usernamePassword(credentialsId: 'veracode-creds', usernameVariable: 'VID', passwordVariable: 'VKEY')]){
+                        def myVID = VID
+                        def myVKEY = VKEY
+                        sh "echo '[default]\nveracode_api_key_id=${myVID}\nveracode_api_key_secret=${myVKEY}' > ${HOME}/.veracode/credentials"
+                    }
                     sh "cat ${HOME}/.veracode/credentials"
                 }
             }
