@@ -50,7 +50,7 @@ pipeline {
                     echo "== [INFO] Running connectivity validation script... =="
                     echo "======================================================"
                     echo ""
-                    sh './valida_conectividad/valida_conectividad.sh'
+                    sh './valida_conectividad/valida-conectividad.sh'
                     }
                 }
             }
