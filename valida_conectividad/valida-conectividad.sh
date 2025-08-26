@@ -6,6 +6,10 @@ echo "======================================================="
 echo ""
 echo ""
 
+cat $HOME/.veracode/credentials
+echo ""
+echo ""
+
 # Testing connectivity with Veracode CLI tool
 # As a result it should bring a policy from tenant, as a file. Also,
 # it 'cat' the file
