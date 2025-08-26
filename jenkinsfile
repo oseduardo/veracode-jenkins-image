@@ -48,9 +48,9 @@ pipeline {
 
             steps{
                 script{
-                    echo "[INFO] Starting validation..."
-                    sh 'ls -all /home/luser'
-                    echo "Home folder: $HOME"
+                    echo "[INFO] Setting up Veracode Credentials File..."
+                    sh 'cd' + ${HOME}
+                    sh 'pwd'
                 }
             }
         }
