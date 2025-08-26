@@ -10,7 +10,7 @@ pwd
 ls -all
 echo $PATH
 echo $HOME
-cat $HOME/.veracode/credentials
+cat ~/.veracode/credentials
 echo ""
 echo ""
 
