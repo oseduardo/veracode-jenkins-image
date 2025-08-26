@@ -6,8 +6,8 @@ LABEL image="jenkins/inbound-agent:latest-jdk17" distro="debian" version="0.2.2-
 ### ==== Configuración Inicial ====
 USER root
 RUN mkdir -p /var/lib/jenkins/.veracode && \
-    chown jenkins:jenkins /var/lib/jenkins/.veracode && \
-    chmod 755 /var/lib/jenkins/.veracode
+    chown -R jenkins:jenkins /var/lib/jenkins/.veracode && \
+    chmod -R 755 /var/lib/jenkins/.veracode
 
 # Update and install all packages in a single layer to reduce image size
 RUN apt-get update && \
