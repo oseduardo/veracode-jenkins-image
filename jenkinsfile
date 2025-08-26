@@ -50,7 +50,7 @@ pipeline {
                 script{
                     echo "[INFO] Setting up Veracode Credentials File..."
                     sh "ls -all ${HOME}"
-                    sh "mkdir -P ${HOME}/.veracode"
+                    sh "mkdir -p ${HOME}/.veracode"
                     sh "echo 'pruebita"
                     sh "ls -all ${HOME}"
                     //sh 'cat'
