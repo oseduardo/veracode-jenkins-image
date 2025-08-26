@@ -3,8 +3,7 @@ pipeline {
     agent any
 
     environment {
-        vID     = credentials('veracode-creds').username
-        vKEY    = credentials('veracode-creds').password
+        veracode_creds = credentials('veracode-creds')
         //SRCCLR_API_TOKEN = credentials('SRCCLR_API_TOKEN')
     }
 
@@ -34,7 +33,7 @@ pipeline {
                 docker { 
                     //It uses veracode-agente:latest docker image to run pipeline stages
                     image 'veracode-agente:latest'
-                    args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY -i --entrypoint='
+                    args '-e VERACODE_API_KEY_ID=$veracode_creds_USR -e VERACODE_API_KEY_SECRET=$veracode_creds_PSW -i --entrypoint='
                     reuseNode true
                 }
             }
