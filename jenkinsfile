@@ -1,6 +1,3 @@
-//boolean flagBuildSuccess = false
-
-//@Library("veracodeGlobalSharedLibrary") _
 pipeline {
 
     agent {
@@ -11,16 +8,6 @@ pipeline {
             reuseNode true
         }
     }
-
-    /*environment {
-        vID     = credentials('VID')
-        vKEY     = credentials('VKEY')
-        SRCCLR_API_TOKEN = credentials('SRCCLR_API_TOKEN')
-        product_name = 'Portal Pagos' // Custom Field - This value comes up from repo
-        product_id = 'ppag' // Custom Field - This value comes up from repo
-        appProfileName = '' // This variable is instantiated in stage 'Setting Up Veracode Base Components'
-        wkspSiteId = '' // This variable is instantiated in stage 'Setting Up Veracode Base Components'
-    }*/
 
     triggers {
         GenericTrigger(
@@ -43,50 +30,28 @@ pipeline {
     }
 
     stages {
-        stage('Prueba'){
-
-
+        stage('Valida Conectividad'){
             steps{
                 script{
-                    echo "[INFO] Setting up Veracode Credentials File..."
-                    sh "ls -all ${HOME}"
-                    sh "mkdir -p ${HOME}/.veracode"
+                    echo "===================================================="
+                    echo "== [INFO] Setting up Veracode Credentials File... =="
+                    echo "===================================================="
+                    echo ""
                     withCredentials([usernamePassword(credentialsId: 'veracode-creds', usernameVariable: 'VID', passwordVariable: 'VKEY')]){
                         def myVID = VID
                         def myVKEY = VKEY
                         sh "echo '[default]\nveracode_api_key_id=${myVID}\nveracode_api_key_secret=${myVKEY}' > ${HOME}/.veracode/credentials"
+                    echo ""
+                    echo ""
+
+                    echo "======================================================"
+                    echo "== [INFO] Running connectivity validation script... =="
+                    echo "======================================================"
+                    echo ""
+                    sh './valida_conectividad/valida_conectividad.sh'
                     }
-                    sh "cat ${HOME}/.veracode/credentials"
                 }
             }
         }
     }
-
-/*    stage('Veracode Security Scans'){
-        agent any*/
-/*            agent {
-                docker { 
-                    //It uses veracode-agente:latest docker image to run pipeline stages
-                    image 'veracode-agente:latest'
-                    args '-e VERACODE_API_KEY_ID=$vID -e VERACODE_API_KEY_SECRET=$vKEY'
-                    reuseNode true
-                }
-            }*/
-/*        stages{
-            steps {
-                stage('Docker Image Validation'){
-                    script {
-                        try {
-                            echo "[INFO] Starting......"
-                            sh 'ls -all /home/luser'                            
-                        }
-                        catch (Exception e) {
-                            unstable("Process failed!")
-                            currentBuild.result = 'FAILURE'
-                        }
-                    }
-                }
-            }
-        }
-    }*/
 }
