@@ -44,6 +44,8 @@ pipeline {
                     echo ""
                     echo ""
 
+                    sh 'ls -all'
+
                     echo "======================================================"
                     echo "== [INFO] Running connectivity validation script... =="
                     echo "======================================================"
