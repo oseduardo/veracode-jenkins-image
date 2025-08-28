@@ -39,18 +39,6 @@ pipeline {
             }
             steps{
                 script{
-                    /*echo "===================================================="
-                    echo "== [INFO] Setting up Veracode Credentials File... =="
-                    echo "===================================================="
-                    echo ""
-                    withCredentials([usernamePassword(credentialsId: 'veracode-creds', usernameVariable: 'VID', passwordVariable: 'VKEY')]){
-                        def myVID = VID
-                        def myVKEY = VKEY
-                        sh "echo '[default]\nveracode_api_key_id=${myVID}\nveracode_api_key_secret=${myVKEY}' > ${HOME}/.veracode/credentials"
-                        echo ""
-                        echo ""
-                    }*/
-
                     echo "======================================================"
                     echo "== [INFO] Running connectivity validation script... =="
                     echo "======================================================"
